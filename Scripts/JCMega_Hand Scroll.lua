@@ -1,7 +1,14 @@
 --========================================================
--- JCMega_Hand Scroll
--- Requiere ReaImGui + JS_ReaScriptAPI
---Created by **JC / MegaTrazher**
+-- @description JCMega Hand Scroll
+-- @version 1.0.0
+-- @author JC MediaFX / MegaTrazher
+-- @about
+--   Interactive hand-scroll pad for REAPER.
+--   Allows horizontal and vertical navigation by dragging
+--   inside a dedicated control surface with configurable
+--   mouse button assignments and wheel zoom support.
+-- @changelog
+--   Initial release.
 --========================================================
 
 local r = reaper

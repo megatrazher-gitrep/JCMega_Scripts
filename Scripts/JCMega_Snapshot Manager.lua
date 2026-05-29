@@ -1,7 +1,14 @@
 --========================================================
--- JCMega_Snapshot Manager
--- Requiere ReaImGui + JS_ReaScriptAPI
---Created by **JC / MegaTrazher**
+-- @description JCMega Snapshot Manager
+-- @version 1.0.0
+-- @author JC MediaFX / MegaTrazher
+-- @about
+--   Create, store and recall project snapshots.
+--   Designed to speed up workflow by saving track,
+--   mixer and project states for quick comparison
+--   and session management.
+-- @changelog
+--   Initial release.
 --========================================================
 
 local r = reaper

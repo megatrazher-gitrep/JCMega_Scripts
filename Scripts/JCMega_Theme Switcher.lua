@@ -1,7 +1,14 @@
 --========================================================
--- JCMega_Theme Switcher
--- Requiere ReaImGui + JS_ReaScriptAPI
---Created by **JC / MegaTrazher**
+-- @description JCMega Theme Switcher
+-- @version 1.0.0
+-- @author JC MediaFX / MegaTrazher
+-- @about
+--   Theme management utility for REAPER.
+--   Quickly browse, preview and switch between
+--   installed themes while maintaining a fast
+--   and organized workflow.
+-- @changelog
+--   Initial release.
 --========================================================
 
 local c = {

@@ -1,3 +1,14 @@
+-- @description JCMega Template Constructor
+-- @version 1.0.0
+-- @author JC MediaFX / MegaTrazher
+-- @about
+--   Advanced template creation tool for REAPER.
+--   Build custom project templates, track layouts,
+--   routing structures and workflow presets from
+--   an intuitive graphical interface.
+-- @changelog
+--   Initial release.
+
 local c = {
   ModalWindowDimBg = 0xCCCCCC59,
   TabDimmedSelectedOverline = 0x80808000,
@@ -194,10 +205,7 @@ end
 -- í ½íº€ CONTINUAR EL CODIGO DEL SCRIPT DESTINO
 --------------------------------------------------
 
--- @description JC Mega Template Constructor
--- @version 4.0
--- @author JC Megatrazher
--- @requires ReaImGui
+
 
 local r = reaper
 

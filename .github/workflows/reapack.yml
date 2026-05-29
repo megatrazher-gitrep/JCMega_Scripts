@@ -1,0 +1,43 @@
+name: Generate ReaPack Index
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install dependencies
+        run: |
+          gem install reapack-index
+
+      - name: Generate index.xml
+        run: |
+          reapack-index --generate index.xml .
+
+      - name: Commit index.xml
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add index.xml
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-update ReaPack index"
+            git push
+          fi
