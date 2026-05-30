@@ -1,40 +1,50 @@
 name: Build ReaPack Index
 
 on:
-  push:
-    branches:
-      - main
+push:
+branches:
+- main
+
+permissions:
+contents: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+build:
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+```
+steps:
+  - name: Checkout Repository
+    uses: actions/checkout@v4
+    with:
+      fetch-depth: 0
 
-      - name: Install Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
+  - name: Install Ruby
+    uses: ruby/setup-ruby@v1
+    with:
+      ruby-version: '3.2'
 
-      - name: Install reapack-index
-        run: gem install reapack-index
+  - name: Install Pandoc
+    run: |
+      sudo apt-get update
+      sudo apt-get install -y pandoc
 
-      - name: Generate index.xml
-        run: |
-          reapack-index --name "JCMega Scripts" .
+  - name: Install ReaPack Indexer
+    run: gem install reapack-index
 
-      - name: Commit index.xml
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
+  - name: Generate ReaPack Index
+    run: |
+      yes | reapack-index --name "JCMega Scripts" .
 
-          git add index.xml
+  - name: Commit Updated Index
+    run: |
+      git config user.name "github-actions"
+      git config user.email "github-actions@github.com"
 
-          git diff --cached --quiet || \
-          git commit -m "Update ReaPack index"
+      git add index.xml
 
-          git push
+      if ! git diff --cached --quiet; then
+        git commit -m "Update ReaPack index"
+        git push
+      fi
+```
