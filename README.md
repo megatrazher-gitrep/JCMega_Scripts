@@ -1,52 +1,54 @@
 # JCMega Scripts
 
-<<<<<<< HEAD
-Professional REAPER workflow tools created with ReaImGui.
+Professional REAPER tools and workflow enhancements developed by JC MediaFX.
 
-These scripts are designed to improve speed, organization, and workflow efficiency inside REAPER with modern custom interfaces and advanced utility systems.
+JCMega Scripts is a collection of Lua and ReaImGui scripts designed to improve productivity, workflow, mixing, routing, project organization, and customization inside REAPER.
 
 ---
 
-# Included Scripts
+## ReaPack Repository
 
-## JCMega HandScroll
+Add the following repository to ReaPack:
+
+```text
+https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
+```
+
+Installation:
+
+1. Open REAPER.
+2. Go to Extensions → ReaPack → Import repositories.
+3. Click Add.
+4. Paste the repository URL above.
+5. Synchronize packages.
+6. Install the desired JCMega Scripts packages.
+
+---
+
+## Included Scripts
+
+### JCMega HandScroll
 
 A custom hand-scroll and zoom controller for REAPER built with ReaImGui and JS_ReaScriptAPI.
 
-This script creates an interactive touchpad-style interface that allows smooth timeline scrolling and zooming directly inside REAPER.
-
-### Features
+#### Features
 
 * Hand-scroll style navigation
 * Horizontal timeline scrolling
 * Vertical track scrolling
 * Mouse wheel zoom
-* Selectable drag button:
-
-  * Left Click
-  * Right Click
-  * Mouse Wheel Click
+* Selectable drag button
 * Modern custom ImGui interface
 * Visual drag feedback
 * Lightweight and responsive
 
 ---
 
-## JCMega Snapshot Manager
+### JCMega Snapshot Manager
 
 An advanced snapshot management system for REAPER that allows saving and restoring complete mix states instantly.
 
-This script captures track settings such as:
-
-* Volume
-* Pan
-* Mute state
-* Solo state
-* FX enabled/disabled states
-
-Snapshots are stored directly inside the REAPER project using Project ExtState, allowing persistent recall between sessions.
-
-### Features
+#### Features
 
 * Save unlimited mix snapshots
 * Instant snapshot recall
@@ -61,7 +63,7 @@ Snapshots are stored directly inside the REAPER project using Project ExtState, 
 * Status notification system
 * Clipboard copy support
 
-### Typical Uses
+#### Typical Uses
 
 * Compare mix versions instantly
 * A/B test processing chains
@@ -69,147 +71,6 @@ Snapshots are stored directly inside the REAPER project using Project ExtState, 
 * Save arrangement states
 * Create safety backups during mixing
 * Fast client revision workflow
-
----
-
-# Requirements
-
-Before using these scripts, install:
-
-* REAPER
-* ReaImGui
-* JS_ReaScriptAPI
-
-Recommended installation method:
-
-Use ReaPack inside REAPER.
-
----
-
-# Installation
-
-## 1. Install Dependencies
-
-Install:
-
-* ReaImGui
-* JS_ReaScriptAPI
-
----
-
-## 2. Add Scripts
-
-Place the LUA scripts inside your REAPER Scripts folder.
-
-Example:
-
-```text
-REAPER/Scripts/
-```
-
----
-
-## 3. Load Scripts in REAPER
-
-1. Open:
-
-   * Actions → Show Action List
-
-2. Click:
-
-   * ReaScript → Load
-
-3. Select the desired script.
-
-4. Run the script.
-
----
-
-# Included LUA Files
-
-```text
-JCMega_HandScroll.lua
-JCMega_SnapshotManager.lua
-```
-
----
-
-# Screenshots
-
-Add interface screenshots inside the Screenshots folder.
-
-Example:
-
-```text
-Screenshots/
-```
-
----
-
-# Author
-
-Created by JC / MegaTrazher
-
----
-
-# License
-
-Free to use and modify.
-=======
-Professional REAPER tools and workflow enhancements developed by JC MediaFX.
-
-## About
-
-JCMega Scripts is a collection of Lua and ReaImGui scripts designed to improve productivity, workflow, mixing, routing, project organization, and customization inside REAPER.
-
-The repository includes tools focused on:
-
-- Workflow optimization
-- Track management
-- Mixer utilities
-- Audio production tools
-- Channel strips
-- FX chain builders
-- Theme and UI enhancements
-- ReaImGui interfaces
-- Content creator tools
-
----
-
-## Requirements
-
-Some scripts may require:
-
-- REAPER 7+
-- ReaImGui
-- ReaPack
-- SWS Extension
-
-Recommended:
-
-- Latest version of REAPER
-- Latest version of ReaImGui
-- Latest version of SWS
-
----
-
-## Installation via ReaPack
-
-1. Install ReaPack.
-
-2. Open:
-
-Extensions → ReaPack → Import repositories
-
-3. Add the repository index:
-
-```text
-https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
-```
-
-4. Synchronize packages.
-
-5. Install the desired scripts.
 
 ---
 
@@ -239,10 +100,6 @@ Audio analysis, gain staging, and workflow helpers.
 
 Theme customization and interface enhancement tools.
 
-### Rendering Tools
-
-Render and export workflow utilities.
-
 ### FX Builders
 
 Custom FX chain and processing builders.
@@ -250,6 +107,24 @@ Custom FX chain and processing builders.
 ### ReaImGui Tools
 
 Advanced graphical interfaces built with ReaImGui.
+
+---
+
+## Requirements
+
+Some scripts may require:
+
+* REAPER 7+
+* ReaImGui
+* ReaPack
+* JS_ReaScriptAPI
+* SWS Extension
+
+Recommended:
+
+* Latest version of REAPER
+* Latest version of ReaImGui
+* Latest version of SWS
 
 ---
 
@@ -261,30 +136,30 @@ New tools, workflow enhancements, and professional versions are added regularly.
 
 ---
 
-## Support the Project
+## Upcoming Features
 
-If you enjoy these tools and want to support future development, follow:
-
-### TikTok
-
-https://www.tiktok.com/@megatrazher
-
-### GitHub
-
-https://github.com/megatrazher-gitrep
+* Advanced Channel Strips
+* Track Templates Manager
+* FX Chain Constructor PRO
+* Theme Customization Tools
+* Project Management Utilities
+* Rendering Assistant
+* Mixer Workflow Suite
+* Audio Analysis Toolkit
 
 ---
 
-## Upcoming Features
+## Support the Project
 
-- Advanced Channel Strips
-- Track Templates Manager
-- FX Chain Constructor PRO
-- Theme Customization Tools
-- Project Management Utilities
-- Rendering Assistant
-- Mixer Workflow Suite
-- Audio Analysis Toolkit
+TikTok:
+
+@megatrazher
+
+https://www.tiktok.com/@megatrazher
+
+GitHub:
+
+https://github.com/megatrazher-gitrep
 
 ---
 
@@ -309,4 +184,3 @@ Copyright (c) JC MediaFX
 JC MediaFX
 
 Developed for the REAPER community with a focus on speed, usability, and professional workflows.
->>>>>>> ca6f0ff19ef14c89d83287cf5a121343e68e6620
