@@ -14,41 +14,79 @@ Add the following repository to ReaPack:
 https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
 ```
 
-Installation:
+### Installation via ReaPack
 
-1. Open REAPER.
-2. Go to Extensions → ReaPack → Import repositories.
-3. Click Add.
-4. Paste the repository URL above.
-5. Synchronize packages.
-6. Install the desired JCMega Scripts packages.
+1. Install ReaPack.
+2. Open REAPER.
+3. Go to:
+
+```text
+Extensions → ReaPack → Import repositories
+```
+
+4. Click **Add**.
+5. Paste the repository URL above.
+6. Synchronize packages.
+7. Install the desired JCMega Scripts packages.
 
 ---
 
-## Included Scripts
+## About
 
-### JCMega HandScroll
+The repository includes tools focused on:
+
+* Workflow optimization
+* Track management
+* Mixer utilities
+* Audio production tools
+* Channel strips
+* FX chain builders
+* Theme and UI enhancements
+* ReaImGui interfaces
+* Content creator tools
+
+---
+
+# Included Scripts
+
+## JCMega HandScroll
 
 A custom hand-scroll and zoom controller for REAPER built with ReaImGui and JS_ReaScriptAPI.
 
-#### Features
+This script creates an interactive touchpad-style interface that allows smooth timeline scrolling and zooming directly inside REAPER.
+
+### Features
 
 * Hand-scroll style navigation
 * Horizontal timeline scrolling
 * Vertical track scrolling
 * Mouse wheel zoom
 * Selectable drag button
+
+  * Left Click
+  * Right Click
+  * Mouse Wheel Click
 * Modern custom ImGui interface
 * Visual drag feedback
 * Lightweight and responsive
 
 ---
 
-### JCMega Snapshot Manager
+## JCMega Snapshot Manager
 
 An advanced snapshot management system for REAPER that allows saving and restoring complete mix states instantly.
 
-#### Features
+This script captures track settings such as:
+
+* Volume
+* Pan
+* Mute state
+* Solo state
+* FX enabled/disabled states
+
+Snapshots are stored directly inside the REAPER project using Project ExtState, allowing persistent recall between sessions.
+
+### Features
 
 * Save unlimited mix snapshots
 * Instant snapshot recall
@@ -63,7 +101,7 @@ An advanced snapshot management system for REAPER that allows saving and restori
 * Status notification system
 * Clipboard copy support
 
-#### Typical Uses
+### Typical Uses
 
 * Compare mix versions instantly
 * A/B test processing chains
@@ -71,6 +109,66 @@ An advanced snapshot management system for REAPER that allows saving and restori
 * Save arrangement states
 * Create safety backups during mixing
 * Fast client revision workflow
+
+---
+
+## JCMega Template Constructor
+
+A powerful template creation and management system for REAPER designed to build complete track templates quickly and consistently.
+
+The Template Constructor allows users to create reusable project building blocks, speeding up session setup and maintaining standardized workflows across productions.
+
+### Features
+
+* Create track templates from existing tracks
+* Save custom template collections
+* Organize templates by category
+* One-click template loading
+* Custom ReaImGui interface
+* Fast project setup workflow
+* Template preview system
+* Track color and icon support
+* Routing and FX preservation
+* Professional workflow optimization
+
+### Typical Uses
+
+* Recording session templates
+* Mixing templates
+* Mastering chains
+* Live streaming setups
+* Podcast production templates
+* Content creator workflows
+
+---
+
+## JCMega Theme Switcher
+
+A modern theme management utility for REAPER that allows users to quickly switch, organize, and manage installed themes from a single interface.
+
+Built with ReaImGui, Theme Switcher provides a faster and more visual workflow for theme selection without navigating through multiple REAPER menus.
+
+### Features
+
+* Instant theme switching
+* Installed theme browser
+* Theme organization tools
+* Favorite themes system
+* Search and filtering
+* Modern ReaImGui interface
+* Fast theme preview workflow
+* Lightweight and responsive
+* One-click theme loading
+* Workflow-focused design
+
+### Typical Uses
+
+* Quickly switch between workspaces
+* Organize large theme collections
+* Create dedicated mixing environments
+* Create dedicated editing environments
+* Improve visual workflow efficiency
+* Customize REAPER appearance instantly
 
 ---
 
@@ -100,6 +198,10 @@ Audio analysis, gain staging, and workflow helpers.
 
 Theme customization and interface enhancement tools.
 
+### Rendering Tools
+
+Render and export workflow utilities.
+
 ### FX Builders
 
 Custom FX chain and processing builders.
@@ -120,11 +222,22 @@ Some scripts may require:
 * JS_ReaScriptAPI
 * SWS Extension
 
-Recommended:
+### Recommended
 
 * Latest version of REAPER
 * Latest version of ReaImGui
 * Latest version of SWS
+
+---
+
+## Included LUA Files
+
+```text
+JCMega_HandScroll.lua
+JCMega_SnapshotManager.lua
+JCMega_TemplateConstructor.lua
+JCMega_ThemeSwitcher.lua
+```
 
 ---
 
@@ -139,33 +252,35 @@ New tools, workflow enhancements, and professional versions are added regularly.
 ## Upcoming Features
 
 * Advanced Channel Strips
-* Track Templates Manager
 * FX Chain Constructor PRO
-* Theme Customization Tools
 * Project Management Utilities
 * Rendering Assistant
 * Mixer Workflow Suite
 * Audio Analysis Toolkit
+* Track Management Suite
+* Workflow Automation Tools
 
 ---
 
 ## Support the Project
 
-TikTok:
+If you enjoy these tools and want to support future development, follow:
 
-@megatrazher
+### TikTok
 
 https://www.tiktok.com/@megatrazher
 
-GitHub:
+### GitHub
 
 https://github.com/megatrazher-gitrep
+
+Professional and commercial PRO versions of selected tools are currently in development.
 
 ---
 
 ## Contributing
 
-Suggestions, feedback, and bug reports are always welcome.
+Suggestions, feedback, feature requests, and bug reports are always welcome.
 
 You can open an issue in the GitHub repository to report bugs or request new features.
 
@@ -183,4 +298,4 @@ Copyright (c) JC MediaFX
 
 JC MediaFX
 
-Developed for the REAPER community with a focus on speed, usability, and professional workflows.
+Developed for the REAPER community with a focus on speed, usability, professional workflows, and modern user interface design.
