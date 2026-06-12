@@ -6,6 +6,20 @@ This repository contains Lua scripts focused on improving speed, organization, n
 
 ---
 
+## ReaPack Repository Link
+
+Use this link to import the repository in ReaPack:
+
+```text
+https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
+```
+
+Direct link:
+
+[Import JCMega Scripts in ReaPack](https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml)
+
+---
+
 ## Available Scripts
 
 | Script | File | Description |
@@ -35,14 +49,16 @@ Install dependencies through ReaPack before running the scripts.
 
 1. Open **REAPER**.
 2. Go to **Extensions > ReaPack > Import repositories...**
-3. Add the repository index URL:
+3. Copy and paste this repository URL:
 
 ```text
 https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
 ```
 
-4. Synchronize packages.
-5. Install the JCMega scripts you want to use.
+4. Click **OK**.
+5. Go to **Extensions > ReaPack > Synchronize packages**.
+6. Search for **JCMega** in the ReaPack package browser.
+7. Install the scripts you want to use.
 
 ### Option 2: Manual Installation
 
@@ -119,7 +135,7 @@ They are especially useful for:
 
 Created by **JC / MegaTrazher**.
 
-Repository: `JCMega_Scripts`
+Repository: [JCMega_Scripts](https://github.com/megatrazher-gitrep/JCMega_Scripts)
 
 ---
 
