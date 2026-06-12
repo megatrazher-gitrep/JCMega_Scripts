@@ -1,301 +1,128 @@
-# JCMega Scripts
+# JCMega_Scripts
 
-Professional REAPER tools and workflow enhancements developed by JC MediaFX.
+Professional workflow tools for **REAPER**, created by **JC / MegaTrazher**.
 
-JCMega Scripts is a collection of Lua and ReaImGui scripts designed to improve productivity, workflow, mixing, routing, project organization, and customization inside REAPER.
-
----
-
-## ReaPack Repository
-
-Add the following repository to ReaPack:
-
-```text
-https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
-```
-
-### Installation via ReaPack
-
-1. Install ReaPack.
-2. Open REAPER.
-3. Go to:
-
-```text
-Extensions → ReaPack → Import repositories
-```
-
-4. Click **Add**.
-5. Paste the repository URL above.
-6. Synchronize packages.
-7. Install the desired JCMega Scripts packages.
+This repository contains Lua scripts focused on improving speed, organization, navigation, visual workflow, project setup, and session management inside REAPER.
 
 ---
 
-## About
+## Available Scripts
 
-The repository includes tools focused on:
-
-* Workflow optimization
-* Track management
-* Mixer utilities
-* Audio production tools
-* Channel strips
-* FX chain builders
-* Theme and UI enhancements
-* ReaImGui interfaces
-* Content creator tools
-
----
-
-# Included Scripts
-
-## JCMega HandScroll
-
-A custom hand-scroll and zoom controller for REAPER built with ReaImGui and JS_ReaScriptAPI.
-
-This script creates an interactive touchpad-style interface that allows smooth timeline scrolling and zooming directly inside REAPER.
-
-### Features
-
-* Hand-scroll style navigation
-* Horizontal timeline scrolling
-* Vertical track scrolling
-* Mouse wheel zoom
-* Selectable drag button
-
-  * Left Click
-  * Right Click
-  * Mouse Wheel Click
-* Modern custom ImGui interface
-* Visual drag feedback
-* Lightweight and responsive
-
----
-
-## JCMega Snapshot Manager
-
-An advanced snapshot management system for REAPER that allows saving and restoring complete mix states instantly.
-
-This script captures track settings such as:
-
-* Volume
-* Pan
-* Mute state
-* Solo state
-* FX enabled/disabled states
-
-Snapshots are stored directly inside the REAPER project using Project ExtState, allowing persistent recall between sessions.
-
-### Features
-
-* Save unlimited mix snapshots
-* Instant snapshot recall
-* Replace existing snapshots
-* Delete snapshots with confirmation
-* Reorder snapshots
-* Active snapshot indicator
-* Snapshot persistence inside project files
-* Track state restoration by GUID
-* FX enabled state recall
-* Custom modern ImGui interface
-* Status notification system
-* Clipboard copy support
-
-### Typical Uses
-
-* Compare mix versions instantly
-* A/B test processing chains
-* Store alternative mastering setups
-* Save arrangement states
-* Create safety backups during mixing
-* Fast client revision workflow
-
----
-
-## JCMega Template Constructor
-
-A powerful template creation and management system for REAPER designed to build complete track templates quickly and consistently.
-
-The Template Constructor allows users to create reusable project building blocks, speeding up session setup and maintaining standardized workflows across productions.
-
-### Features
-
-* Create track templates from existing tracks
-* Save custom template collections
-* Organize templates by category
-* One-click template loading
-* Custom ReaImGui interface
-* Fast project setup workflow
-* Template preview system
-* Track color and icon support
-* Routing and FX preservation
-* Professional workflow optimization
-
-### Typical Uses
-
-* Recording session templates
-* Mixing templates
-* Mastering chains
-* Live streaming setups
-* Podcast production templates
-* Content creator workflows
-
----
-
-## JCMega Theme Switcher
-
-A modern theme management utility for REAPER that allows users to quickly switch, organize, and manage installed themes from a single interface.
-
-Built with ReaImGui, Theme Switcher provides a faster and more visual workflow for theme selection without navigating through multiple REAPER menus.
-
-### Features
-
-* Instant theme switching
-* Installed theme browser
-* Theme organization tools
-* Favorite themes system
-* Search and filtering
-* Modern ReaImGui interface
-* Fast theme preview workflow
-* Lightweight and responsive
-* One-click theme loading
-* Workflow-focused design
-
-### Typical Uses
-
-* Quickly switch between workspaces
-* Organize large theme collections
-* Create dedicated mixing environments
-* Create dedicated editing environments
-* Improve visual workflow efficiency
-* Customize REAPER appearance instantly
-
----
-
-## Categories
-
-### Utilities
-
-Workflow and productivity tools.
-
-### Track Management
-
-Tools for organizing and managing tracks.
-
-### Mixer Tools
-
-Mixing and routing utilities.
-
-### Channel Strips
-
-Channel strip style processing interfaces.
-
-### Audio Tools
-
-Audio analysis, gain staging, and workflow helpers.
-
-### Theme Tools
-
-Theme customization and interface enhancement tools.
-
-### Rendering Tools
-
-Render and export workflow utilities.
-
-### FX Builders
-
-Custom FX chain and processing builders.
-
-### ReaImGui Tools
-
-Advanced graphical interfaces built with ReaImGui.
+| Script | File | Description |
+|---|---|---|
+| **JCMega GradienTracks** | `Scripts/JCMega_GradienTracks.lua` | Applies gradient-style track coloring to improve visual organization and make track groups easier to identify. |
+| **JCMega Hand Scroll** | `Scripts/JCMega_Hand Scroll.lua` | Adds a hand-scroll style navigation pad for moving through the REAPER arrange view more comfortably. |
+| **JCMega Snapshot Manager** | `Scripts/JCMega_Snapshot Manager.lua` | Saves, loads, replaces, deletes, and reorders project snapshots for faster mix/session recall. |
+| **JCMega Template Constructor** | `Scripts/JCMega_Template Constructor.lua` | Helps build reusable REAPER templates and speed up project setup workflows. |
+| **JCMega Theme Switcher** | `Scripts/JCMega_Theme Switcher.lua` | Lets you browse and switch REAPER themes quickly from a dedicated interface. |
 
 ---
 
 ## Requirements
 
-Some scripts may require:
+- **REAPER**
+- **ReaPack**
+- **ReaImGui**
+- **JS_ReaScriptAPI** recommended for scripts that use advanced window, mouse, or interface control.
 
-* REAPER 7+
-* ReaImGui
-* ReaPack
-* JS_ReaScriptAPI
-* SWS Extension
-
-### Recommended
-
-* Latest version of REAPER
-* Latest version of ReaImGui
-* Latest version of SWS
+Install dependencies through ReaPack before running the scripts.
 
 ---
 
-## Included LUA Files
+## Installation
+
+### Option 1: ReaPack
+
+1. Open **REAPER**.
+2. Go to **Extensions > ReaPack > Import repositories...**
+3. Add the repository index URL:
 
 ```text
-JCMega_HandScroll.lua
-JCMega_SnapshotManager.lua
-JCMega_TemplateConstructor.lua
-JCMega_ThemeSwitcher.lua
+https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
+```
+
+4. Synchronize packages.
+5. Install the JCMega scripts you want to use.
+
+### Option 2: Manual Installation
+
+1. Download or clone this repository.
+2. Copy the `.lua` scripts into your REAPER scripts folder.
+3. In REAPER, open **Actions > Show action list**.
+4. Click **New Action > Load ReaScript**.
+5. Select the script you want to add.
+6. Run it from the Actions list or assign it to a shortcut, toolbar button, or menu.
+
+---
+
+## Repository Structure
+
+```text
+JCMega_Scripts/
+│
+├── Scripts/
+│   ├── JCMega_GradienTracks.lua
+│   ├── JCMega_Hand Scroll.lua
+│   ├── JCMega_Snapshot Manager.lua
+│   ├── JCMega_Template Constructor.lua
+│   └── JCMega_Theme Switcher.lua
+│
+├── .github/
+│   └── workflows/
+│
+├── index.xml
+└── README.md
 ```
 
 ---
 
-## Development Status
+## Script Overview
 
-This repository is under active development.
+### JCMega GradienTracks
 
-New tools, workflow enhancements, and professional versions are added regularly.
+A visual organization tool designed to color REAPER tracks using gradient-based logic. Useful for large sessions, track groups, buses, folders, and template organization.
 
----
+### JCMega Hand Scroll
 
-## Upcoming Features
+A navigation utility for moving around the REAPER arrange view with a more visual and direct scrolling workflow. Designed to make timeline navigation faster and more comfortable.
 
-* Advanced Channel Strips
-* FX Chain Constructor PRO
-* Project Management Utilities
-* Rendering Assistant
-* Mixer Workflow Suite
-* Audio Analysis Toolkit
-* Track Management Suite
-* Workflow Automation Tools
+### JCMega Snapshot Manager
 
----
+A session recall tool for saving and restoring project states. It is useful for comparing mix versions, testing ideas, storing temporary configurations, and quickly returning to previous states.
 
-## Support the Project
+### JCMega Template Constructor
 
-If you enjoy these tools and want to support future development, follow:
+A project-building utility designed to speed up template creation and session setup. Useful for producers, editors, streamers, and REAPER users who work with repeated project structures.
 
-### TikTok
+### JCMega Theme Switcher
 
-https://www.tiktok.com/@megatrazher
-
-### GitHub
-
-https://github.com/megatrazher-gitrep
-
-Professional and commercial PRO versions of selected tools are currently in development.
+A theme management tool that allows fast switching between installed REAPER themes. Useful for testing layouts, changing visual environments, or quickly comparing custom themes.
 
 ---
 
-## Contributing
+## Recommended Use
 
-Suggestions, feedback, feature requests, and bug reports are always welcome.
+These scripts are designed for users who want to build a faster, more visual, and more organized REAPER workflow.
 
-You can open an issue in the GitHub repository to report bugs or request new features.
+They are especially useful for:
 
----
-
-## License
-
-MIT License
-
-Copyright (c) JC MediaFX
+- Music production
+- Mixing sessions
+- Live streaming setups
+- Template-based workflows
+- Custom REAPER configurations
+- Fast navigation and session management
 
 ---
 
 ## Author
 
-JC MediaFX
+Created by **JC / MegaTrazher**.
 
-Developed for the REAPER community with a focus on speed, usability, professional workflows, and modern user interface design.
+Repository: `JCMega_Scripts`
+
+---
+
+## Status
+
+This repository is actively being developed. More tools, improvements, and UI refinements may be added over time.
