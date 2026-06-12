@@ -1,14 +1,14 @@
-# JCMega_Scripts
+# JCMega Scripts
 
 Professional workflow tools for **REAPER**, created by **JC / MegaTrazher**.
 
-This repository contains Lua scripts focused on improving speed, organization, navigation, visual workflow, project setup, and session management inside REAPER.
+This repository contains Lua scripts designed to improve workflow speed, visual organization, navigation, project setup, theme switching, and session management inside REAPER.
 
 ---
 
-## ReaPack Repository Link
+## ReaPack Repository
 
-Use this link to import the repository in ReaPack:
+Use this URL to import the repository in ReaPack:
 
 ```text
 https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
@@ -16,7 +16,26 @@ https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.x
 
 Direct link:
 
-[Import JCMega Scripts in ReaPack](https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml)
+[Open ReaPack index.xml](https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml)
+
+---
+
+## Installation with ReaPack
+
+1. Open **REAPER**.
+2. Go to **Extensions > ReaPack > Import repositories...**
+3. Paste this URL:
+
+```text
+https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
+```
+
+4. Click **OK**.
+5. Go to **Extensions > ReaPack > Synchronize packages**.
+6. Search for **JCMega**.
+7. Install the scripts you want to use.
+
+> If ReaPack shows an obsolete package warning after updating the repository, choose **Ignore** and synchronize again after the updated `index.xml` has been uploaded.
 
 ---
 
@@ -24,11 +43,26 @@ Direct link:
 
 | Script | File | Description |
 |---|---|---|
-| **JCMega GradienTracks** | `Scripts/JCMega_GradienTracks.lua` | Applies gradient-style track coloring to improve visual organization and make track groups easier to identify. |
-| **JCMega Hand Scroll** | `Scripts/JCMega_Hand Scroll.lua` | Adds a hand-scroll style navigation pad for moving through the REAPER arrange view more comfortably. |
-| **JCMega Snapshot Manager** | `Scripts/JCMega_Snapshot Manager.lua` | Saves, loads, replaces, deletes, and reorders project snapshots for faster mix/session recall. |
+| **JCMega GradienTracks** | `Scripts/JCMega_GradienTracks.lua` | Applies gradient-style coloring to REAPER tracks for faster visual organization. Useful for folders, buses, groups, and large sessions. |
+| **JCMega Hand Scroll** | `Scripts/JCMega_Hand Scroll.lua` | Adds a hand-scroll style navigation workflow for moving through the REAPER arrange view more comfortably. |
+| **JCMega Snapshot Manager** | `Scripts/JCMega_Snapshot Manager.lua` | Saves, loads, replaces, deletes, and reorders project snapshots for fast mix/session recall. |
 | **JCMega Template Constructor** | `Scripts/JCMega_Template Constructor.lua` | Helps build reusable REAPER templates and speed up project setup workflows. |
-| **JCMega Theme Switcher** | `Scripts/JCMega_Theme Switcher.lua` | Lets you browse and switch REAPER themes quickly from a dedicated interface. |
+| **JCMega Theme Switcher** | `Scripts/JCMega_Theme Switcher.lua` | Lets you browse and switch REAPER themes quickly from a dedicated workflow. |
+
+---
+
+## Featured Script: JCMega GradienTracks
+
+**JCMega GradienTracks** is a visual organization tool for REAPER that helps color tracks using gradient-style logic.
+
+It is designed to make sessions easier to read, especially when working with:
+
+- Large track counts
+- Folder structures
+- Buses and submixes
+- Mix templates
+- Color-coded production workflows
+- Streaming or live session templates
 
 ---
 
@@ -43,31 +77,15 @@ Install dependencies through ReaPack before running the scripts.
 
 ---
 
-## Installation
-
-### Option 1: ReaPack
-
-1. Open **REAPER**.
-2. Go to **Extensions > ReaPack > Import repositories...**
-3. Copy and paste this repository URL:
-
-```text
-https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.xml
-```
-
-4. Click **OK**.
-5. Go to **Extensions > ReaPack > Synchronize packages**.
-6. Search for **JCMega** in the ReaPack package browser.
-7. Install the scripts you want to use.
-
-### Option 2: Manual Installation
+## Manual Installation
 
 1. Download or clone this repository.
-2. Copy the `.lua` scripts into your REAPER scripts folder.
-3. In REAPER, open **Actions > Show action list**.
-4. Click **New Action > Load ReaScript**.
-5. Select the script you want to add.
-6. Run it from the Actions list or assign it to a shortcut, toolbar button, or menu.
+2. Copy the `.lua` files from the `Scripts` folder.
+3. Open REAPER.
+4. Go to **Actions > Show action list**.
+5. Click **New Action > Load ReaScript**.
+6. Select the script you want to add.
+7. Run it from the Actions list or assign it to a shortcut, toolbar button, or menu.
 
 ---
 
@@ -96,34 +114,33 @@ JCMega_Scripts/
 
 ### JCMega GradienTracks
 
-A visual organization tool designed to color REAPER tracks using gradient-based logic. Useful for large sessions, track groups, buses, folders, and template organization.
+A gradient-based track coloring tool for improving visual organization in REAPER projects.
 
 ### JCMega Hand Scroll
 
-A navigation utility for moving around the REAPER arrange view with a more visual and direct scrolling workflow. Designed to make timeline navigation faster and more comfortable.
+A navigation utility for moving around the arrange view with a more direct and comfortable scrolling workflow.
 
 ### JCMega Snapshot Manager
 
-A session recall tool for saving and restoring project states. It is useful for comparing mix versions, testing ideas, storing temporary configurations, and quickly returning to previous states.
+A session recall tool for saving and restoring project states. Useful for comparing mix versions, testing ideas, and returning to previous configurations.
 
 ### JCMega Template Constructor
 
-A project-building utility designed to speed up template creation and session setup. Useful for producers, editors, streamers, and REAPER users who work with repeated project structures.
+A project-building utility designed to speed up template creation and repeated session setup.
 
 ### JCMega Theme Switcher
 
-A theme management tool that allows fast switching between installed REAPER themes. Useful for testing layouts, changing visual environments, or quickly comparing custom themes.
+A theme management tool that allows fast switching between installed REAPER themes.
 
 ---
 
 ## Recommended Use
 
-These scripts are designed for users who want to build a faster, more visual, and more organized REAPER workflow.
-
-They are especially useful for:
+These scripts are useful for:
 
 - Music production
 - Mixing sessions
+- Editing workflows
 - Live streaming setups
 - Template-based workflows
 - Custom REAPER configurations
@@ -135,7 +152,9 @@ They are especially useful for:
 
 Created by **JC / MegaTrazher**.
 
-Repository: [JCMega_Scripts](https://github.com/megatrazher-gitrep/JCMega_Scripts)
+Repository:
+
+[JCMega_Scripts](https://github.com/megatrazher-gitrep/JCMega_Scripts)
 
 ---
 
