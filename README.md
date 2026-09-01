@@ -51,6 +51,18 @@ https://raw.githubusercontent.com/megatrazher-gitrep/JCMega_Scripts/main/index.x
 
 ---
 
+## After Effects Tools
+
+In addition to the REAPER scripts, this repository includes tools for **Adobe After Effects** (ExtendScript `.jsx`).
+
+| Tool | File | Description |
+|---|---|---|
+| **JCMega Render Segments** | `AfterEffects/JCMega_RenderSegments.jsx` | Splits a composition render into N frame-range segments and renders them in parallel using multiple background `aerender` instances (multi-core speedup), then optionally joins the video segments with ffmpeg. Inspired by the *Render Segments* workflow. |
+
+See [`AfterEffects/README.md`](AfterEffects/README.md) for installation and usage.
+
+---
+
 ## Featured Script: JCMega GradienTracks
 
 **JCMega GradienTracks** is a visual organization tool for REAPER that helps color tracks using gradient-style logic.
